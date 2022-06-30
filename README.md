@@ -1,26 +1,26 @@
-This sample contains the completed program from the tutorial, [Using Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). Intermediate steps are not included.
+Esta muestra contiene el programa completo del tutorial, [Using Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). No se incluyen los pasos intermedios.
 
-The sample also includes a Dockerfile to build a production-ready container image that uses uwsgi and nginx; the uwsgi.ini file provides uwsgi configuration.
+La muestra también incluye un archivo Docker para construir una imagen de contenedor lista para producción que utiliza uwsgi y nginx; el archivo uwsgi.ini proporciona la configuración de uwsgi.
 
-To run the sample:
+Para ejecutar la muestra:
 
-1. Create a virtual environment as described in the tutorial.
-1. Install packages with `pip install -r requirements.txt`.
-1. Activate the virtual environment by running `source env/bin/activate` (Linux/MacOS) or `env\scripts\activate` (Windows).
-1. Create and initialize the database by running `python manage.py migrate`.
-1. Create a superuser as described at the end of the tutorial.
+1. Cree un entorno virtual como se describe en el tutorial.
+1. Instalar paquetes con `pip install -r requirements.txt`.
+1. Active el entorno virtual ejecutando `source env/bin/activate` (Linux/MacOS) o `env\scripts\activate` (Windows).
+1. Cree e inicialice la base de datos ejecutando `python manage.py migrate`.
+1. Cree un superusuario como se describe al final del tutorial.
 
-Contributions to the sample are welcome. When submitting changes, also consider submitting matching changes to the tutorial, the source file for which is [tutorial-django.md]
+Las contribuciones a la muestra son bienvenidas. Cuando envíe cambios, considere también la posibilidad de enviar los cambios correspondientes al tutorial, cuyo archivo fuente es [tutorial-django.md]
 (https://github.com/Microsoft/vscode-docs/blob/master/docs/python/tutorial-django.md).
 
-# Known issues
+# Problemas conocidos
 
-- CSS is lost if you set `DEBUG=False` in settings.py; the workaround is to include an added script at the end of dockerfile.txt to serve static file differently. See [Issue 13](https://github.com/Microsoft/python-sample-vscode-django-tutorial/issues/13) for details.
+- El CSS se pierde si se pone `DEBUG=False` en settings.py; la solución es incluir un script añadido al final de dockerfile.txt para servir el archivo estático de forma diferente. Ver [Issue 13](https://github.com/Microsoft/python-sample-vscode-django-tutorial/issues/13) para más detalles.
 
-# Contributing
+# Contribuyendo a
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
+Este proyecto agradece las contribuciones y sugerencias.  La mayoría de las contribuciones requieren que usted acepte un Acuerdo de Licencia de Contribución (CLA) en el que se declara que tiene derecho, y de hecho nos concede, los derechos para utilizar su contribución. Para más detalles, visite https://cla.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
+Cuando envíe una solicitud de extracción, un bot CLA determinará automáticamente si necesita proporcionar una CLA y decorará el PR de forma adecuada (por ejemplo, etiqueta, comentario). Sólo tiene que seguir las instrucciones proporcionadas por el bot. Sólo tendrá que hacer esto una vez en todos los repos que utilicen nuestro CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Este proyecto ha adoptado el [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). Para más información, consulte el [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) o contacte con [opencode@microsoft.com](mailto:opencode@microsoft.com) con cualquier pregunta o comentario adicional.
